@@ -1,0 +1,37 @@
+{% load static %}
+{% extends 'base.html' %}
+{% block body %}
+	
+	<br><br><br>
+  <div class="container">
+   <div class="row">
+     <div class="col-md-4"></div>
+     <div class="col-md-4">
+       <h3 style="font-weight: bold; margin-left: 110px;">Signup here</h3>
+       <div class="card" style="padding: 10px; width: 25em;box-shadow: 5px 5px 3px grey;">
+       <form class="form" method="POST" action="/signup/" style="margin:20px;">
+        {% csrf_token %}
+        <div class="form-group">
+          <label style="font-size: 20px">Email</label>
+          <br>
+           <input type="email" name="email" class="from-control" style="width: 100%; box-shadow: 3px 3px 3px grey;" >
+         </div>
+         <div class="form-group">
+          <label style="font-size: 20px">Username</label><br>
+           <input type="text" name="username" class="from-control" style="width: 100%; box-shadow: 3px 3px 3px grey;" >
+         </div>
+         <div class="form-group">
+          <label style="font-size: 20px">Password</label> <br>
+           <input type="password" name="password" class="from-control" style="width: 100%; box-shadow: 3px 3px 3px grey;">
+         </div>
+         <div class="form-group">
+          
+           <input type="submit" class="btn btn-md btn-secondary" value="SignUp">
+         </div>
+       </form>
+     </div>
+     </div>
+     <div class="col-md-4"></div>
+   </div> 
+  </div>
+{% endblock %}

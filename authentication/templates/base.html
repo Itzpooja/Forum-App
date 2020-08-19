@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ForumApp</title>
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-light bg-dark">
+  <a class="navbar-brand" style="color: white;font-weight: bold;font-size: 30px;margin-left: 75px;">Forum App</a>
+  <form class="form-inline">
+    <button style="margin: 3px;background-color:white;width:70px; height: 40px;"><a style="font-weight: bold; color: black;" href="/signin/">SignIn</a></button>
+    <button style="margin: 3px;background-color:white;width:70px; height: 40px;"><a style="font-weight: bold; color: black;" href="/signup/">SignUp</a></button>
+  </form>
+</nav>
+
+{% block body %}
+{% endblock %}
+</body>
+</html>
