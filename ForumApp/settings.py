@@ -20,7 +20,7 @@ DATABASES['default'].update(db_from_env)
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-ALLOWED_HOSTS = [“forum_app.herokuapp.com”,]
+ALLOWED_HOSTS = [“poojaforum.herokuapp.com”,]
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
@@ -30,7 +30,6 @@ SECRET_KEY = 'f$b##5b$to80hknwx4khxv(lq(*f_ow+19s(me4-+8l&^9ee8y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
 
 
 # Application definition
